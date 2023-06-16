@@ -1,0 +1,2 @@
+dev.ocpd.spring.problem.security.reactive.SecurityProblemSupportAutoConfiguration
+dev.ocpd.spring.problem.security.servlet.SecurityProblemSupportAutoConfiguration
