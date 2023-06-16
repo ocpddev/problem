@@ -61,7 +61,7 @@ publishing {
             from(components["java"])
             pom {
                 name.set("problem")
-                description.set("Problem support")
+                description.set("Spring Boot Problem support")
                 url.set("https://github.com/ocpddev/problem")
                 licenses {
                     license {
