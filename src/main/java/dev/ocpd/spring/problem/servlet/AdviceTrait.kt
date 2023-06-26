@@ -1,6 +1,5 @@
 package dev.ocpd.spring.problem.servlet
 
-import dev.ocpd.spring.problem.reactive.AdviceTrait
 import dev.ocpd.slf4k.slf4j
 import dev.ocpd.slf4k.warn
 import org.springframework.http.HttpStatus
