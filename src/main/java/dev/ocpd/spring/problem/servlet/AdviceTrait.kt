@@ -36,7 +36,7 @@ interface AdviceTrait {
          * as non-null, but it is actually nullable. Below uses a workaround to construct
          * ProblemDetail with nullable messages.
          */
-        val problem = ProblemDetail.forStatus(HttpStatus.FORBIDDEN).apply { detail = e.message }
+        val problem = ProblemDetail.forStatus(status).apply { detail = e.message }
         log(request, problem, status, e)
         return ResponseEntity(problem, status)
     }
