@@ -60,23 +60,23 @@ publishing {
         create<MavenPublication>("maven") {
             from(components["java"])
             pom {
-                name.set("problem")
-                description.set("Spring Boot Problem support")
-                url.set("https://github.com/ocpddev/problem")
+                name = "problem"
+                description = "Spring Boot Problem support"
+                url = "https://github.com/ocpddev/problem"
                 licenses {
                     license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
+                        name = "The Apache License, Version 2.0"
+                        url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
                     }
                 }
                 scm {
-                    url.set("https://github.com/ocpddev/problem")
+                    url = "https://github.com/ocpddev/problem"
                 }
                 developers {
                     developer {
-                        id.set("sola")
-                        name.set("Sola")
-                        email.set("sola@ocpd.dev")
+                        id = "sola"
+                        name = "Sola"
+                        email = "sola@ocpd.dev"
                     }
                 }
             }
