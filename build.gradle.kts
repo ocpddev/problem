@@ -51,6 +51,8 @@ dependencies {
     compileOnly("org.springframework.boot:spring-boot-starter-web")
     compileOnly("org.springframework.boot:spring-boot-starter-webflux")
     compileOnly("org.springframework.boot:spring-boot-starter-security")
+    testImplementation("org.springframework.boot:spring-boot-starter-web")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 publishing {
@@ -106,4 +108,4 @@ signing {
 }
 
 fun Project.findSecret(key: String, env: String): String? =
-    project.findProperty(key) as? String ?: System.getenv(env)
+        project.findProperty(key) as? String ?: System.getenv(env)
